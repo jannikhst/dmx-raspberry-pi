@@ -1,6 +1,6 @@
 # Beer Pong Table Control via DMX / App
 
-This repository contains a small personal project that allows you to control a beer pong table using DMX LED strips. The project utilizes a DIY DMX API server and provides various scripts, models, and servers to facilitate the control and interaction with the LED strips. You can find a live demo of the web app at [https://yucca.pro](https://yucca.pro).
+This repository contains a small personal project that allows you to control a beer pong table that has built DMX LED stripes via the DMX Protocol. The project utilizes a DIY DMX API server and provides various scripts, models, and servers to facilitate the control and interaction with the LED stripes. You can find a live demo of a example client at [https://yucca.pro](https://yucca.pro).
 
 ## Repository Structure
 
@@ -24,14 +24,14 @@ This folder contains a proxy server that facilitates communication with the DMX 
 
 ### `/sound-analyzer`
 
-Similar to the proxy server, this folder contains a separate proxy server specifically for DMX API communication. It allows clients from external networks to send commands to the DMX API server, ensuring uninterrupted communication.
+This foldwr contains resources that help you analyzing existing icecast streams and retrieving BPM and volume from them. You can also normalize those values and send them directly to the DMX API to match the lightshow speed with the music. 
 
 ### `/typescript`
 
-The TypeScript models in this folder are essential for parsing, sending, and creating data from and to the API used in the DMX LED strip control project. These models provide a structured representation of the data and enhance code readability and maintainability.
+The TypeScript models in this folder are essential for parsing and sending data from and to the API. These models provide a structured representation of the data and enhance code readability and maintainability.
 
 ## Usage
 
-To utilize this project, follow the instructions provided in each subfolder's README file. Start by setting up the Raspberry Pi with the necessary configurations using the scripts in the `/bash` folder. Then, incorporate the Dart models in your Flutter app to control the DMX LED strips. Use the Node.js server in the `/node-server` folder as the API for communication and sequence management. If needed, configure the proxy servers in the `/proxy` and `/sound-analyzer` folders to enable external network communication. Finally, utilize the TypeScript models in the `/typescript` folder to ensure consistent data handling throughout your application.
+To utilize this project, follow the instructions provided in each subfolder's README file. Start by setting up the Raspberry Pi with the necessary configurations using the scripts in the `/bash` folder. Then, incorporate the Dart models in your Flutter app to control DMX fixtures. Use the Node.js server in the `/node-server` folder as the API for communication and sequence management. If needed, configure the proxy server in the `/proxy` folder and setup the `/sound-analyzer`. Or use the typescript models instead of the dart models to ensure consistent data handling throughout your application if you don't want to use flutter.
 
 By combining the resources and instructions provided in each subfolder, you can effectively control the beer pong table using DMX LED strips and create captivating light shows for an enhanced gaming experience.

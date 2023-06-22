@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "moduleResolution": "node",
+        "target": "es2015",
+        "module": "NodeNext",
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "strict": true,
+        "sourceMap": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declarationDir": "./dist",
+        "outDir": "./dist",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "include": [
+       "./app.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

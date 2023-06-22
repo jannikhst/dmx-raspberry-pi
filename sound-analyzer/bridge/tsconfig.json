@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "moduleResolution": "node",
+        "target": "es2015",
+        "module": "commonjs",
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "strict": true,
+        "sourceMap": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declarationDir": "./dist",
+        "outDir": "./dist",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "include": [
+        "*", "analyze/bridge/bridge.ts",
+    ],
+    "exclude": [
+        "node_modues"
+    ]
+}

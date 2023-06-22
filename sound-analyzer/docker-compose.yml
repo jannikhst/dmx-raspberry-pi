@@ -1,0 +1,26 @@
+version: '3'
+services:
+  liquidsoap:
+    build:
+      context: ./liquidsoap
+      dockerfile: Dockerfile
+    environment:
+      - ICECAST_URL=http://192.168.178.77:7777/spotcon
+      - OUT_URL=http://bridge:3000/data
+    networks:
+      - liquidnet
+    restart: always
+
+  bridge:
+    build:
+      context: ./bridge
+      dockerfile: Dockerfile
+    environment:
+      - PIPONG_HOST=http://192.168.178.149:8000
+      - PIPONG_PATH=data
+    networks:
+      - liquidnet
+    restart: always
+
+networks:
+  liquidnet:

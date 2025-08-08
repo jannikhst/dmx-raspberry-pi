@@ -1,5 +1,7 @@
 # Beer Pong Table Control via DMX / App
 
+![Thumbnail](https://raw.githubusercontent.com/jannikhst/dmx-raspberry-pi/main/screenshot-2025-08-08-000280.gif)
+
 This repository provides the resources of a small personal project that allows you to control the lights of a beer pong table remotely via App or directly via the DMX Protocol. The project utilizes a DIY DMX API server and provides various scripts, models, and servers to facilitate the control and interaction with the LED stripes. You can find a live demo of a example client at [https://beerpong.jannik.club](https://beerpong.jannik.club).
 
 ## Repository Structure
